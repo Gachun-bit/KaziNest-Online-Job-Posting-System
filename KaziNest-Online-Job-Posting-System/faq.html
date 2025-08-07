@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="about-page">
+    
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="name">KaziNest</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="register.php">REGISTER</a></li>
+                <li><a href="faq.html">FAQ</a></li>   
+            </ul>
+        </div>
+    </div> <!-- End of navbar -->
+    <div class="">
+        <section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>How much does it cost to post a job?</span>
+      <button class="toggle-btn">+</button>
+    </div>
+    <div class="faq-answer">
+      <p>Employers pay for a subsciption plan of KES 3000 Monthly or KES 28000 Anually which comes with premium job postings, and featured employer listings for <br>
+        increased visibility.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>How is KaziNest different from other job listing sites?</span>
+      <button class="toggle-btn">+</button>
+    </div>
+    <div class="faq-answer">
+      <p>We focus on entry-level and mid-level professionals, and offer smart filtering tools to reach the right candidates faster.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <span>Who can I recruit on KaziNest?</span>
+      <button class="toggle-btn">+</button>
+    </div>
+    <div class="faq-answer show">
+      <p>You can recruit interns, fresh graduates, and junior-level professionals across different fields.</p>
+    </div>
+  </div>
+</section>
+    </div>
+    <script>
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const btn = item.querySelector('.toggle-btn');
+    const answer = item.querySelector('.faq-answer');
+
+    btn.addEventListener('click', () => {
+      const isShown = answer.classList.contains('show');
+
+      // Hide all answers
+      document.querySelectorAll('.faq-answer').forEach(ans => ans.classList.remove('show'));
+      document.querySelectorAll('.toggle-btn').forEach(b => b.textContent = '+');
+
+      // Toggle current
+      if (!isShown) {
+        answer.classList.add('show');
+        btn.textContent = '-';
+      }
+    });
+  });
+</script>
+</body>
+</html>

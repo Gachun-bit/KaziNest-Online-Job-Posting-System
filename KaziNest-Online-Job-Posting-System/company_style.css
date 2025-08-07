@@ -1,0 +1,205 @@
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.container h1 {
+    text-align: center;
+    color: blue;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Submit button */
+button {
+    padding: 12px;
+    background-color: #005fa3;
+    color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e9f5ff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        font-size: 14px;
+    }
+}
+
+input[type="email"],
+input[type="date"],
+input[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.job-card {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.collapsible {
+    background-color:#005fa3;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.collapsible:hover {
+    background-color: #005fa3;
+}
+
+.job-details {
+    padding: 15px;
+    display: none;
+    background-color: #f9f9f9;
+}
+
+
+
+/* ===== Job Card & Collapsible Styles ===== */
+.job-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.collapsible {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.collapsible:hover {
+    background-color: #0056b3;
+}
+
+.job-details {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+
+.dashboard {
+    background-color: #e6ffed;
+    border: 1px solid #28a745;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard h4 {
+    color: #28a745;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 5px;
+}
+
+.dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dashboard th, .dashboard td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.dashboard th {
+    background-color: #28a745;
+    color: white;
+}
+
+.dashboard tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
